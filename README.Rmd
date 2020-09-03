@@ -76,11 +76,11 @@ plot(Independence, surface = dCdV)
 
 
 # Methods
-We present several methods implemented for the copula object. Throughout this section let $\mathscr{C}$ denote the set of bi-variate copulas. Recall that a copula $C$ is Lipschitz, and thus by Rademacher's Theorem it is differentiable *almost everywhere*, i.e. the set of points where $C$ is not differentiable has Lebesgue measure $0$. 
+We present several methods implemented for the copula object. Recall that a copula $C$ is Lipschitz, and thus by Rademacher's Theorem it is differentiable *almost everywhere*, i.e. the set of points where $C$ is not differentiable has Lebesgue measure $0$. 
 
 ## The asterisk product
 
-Let $(U,W)\sim A$ and $(W,V) \sim B$ with $A,B\in \mathscr{C}$. We define 
+Let $(U,W)\sim A$ and $(W,V) \sim B$ with $A,B$ being bi-variate copulas. We define 
 
 $$C = A \ast B =  \int_0^1 \frac{dA}{dw}(u,w)\cdot\frac{dB}{dw}(w,v)dw.$$
 Then $C$ is a copula, and the probabilistic interpretation is that $C$ is the copula of $(U,V)$ given that $(U,V)$ are conditionally independent given $W$. First we initialise two copulas; a Clayton copula with $\theta = 3$ and a Gaussian copula with $\rho = 0.9$.
@@ -124,7 +124,7 @@ plot(r(C)(1000))
 
 ## Convex Combinations
 
-The space $\mathscr{C}$ is closed under convex combinations. That is, let $\alpha \in (0,1)$, then $\alpha A + (1-\alpha)B\in\mathscr{C}$ where addition for copulas is defined pointwise in $(u,v)\in [0,1]^2$. 
+The space of copulas is closed under convex combinations. That is, let $\alpha \in (0,1)$, then $\alpha A + (1-\alpha)B$ is a copula where addition for copulas is defined pointwise in $(u,v)\in [0,1]^n$. 
 
 
 ```{r ConvexCombination}

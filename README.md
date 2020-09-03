@@ -63,8 +63,8 @@ microbenchmark::microbenchmark(r(Independence)(10000), times = 10)
 ```
 
     ## Unit: milliseconds
-    ##                    expr      min       lq     mean   median       uq      max
-    ##  r(Independence)(10000) 453.4243 475.9725 495.6818 486.6522 505.6983 563.2106
+    ##                    expr      min       lq     mean  median       uq     max
+    ##  r(Independence)(10000) 437.8137 461.9183 477.9726 476.672 489.8568 520.069
     ##  neval
     ##     10
 
@@ -110,12 +110,9 @@ plot(Independence, surface = dCdV)
 
 # Methods
 
-We present several methods implemented for the copula object. Throughout
-this section let
-![\\mathscr{C}](https://latex.codecogs.com/png.latex?%5Cmathscr%7BC%7D
-"\\mathscr{C}") denote the set of bi-variate copulas. Recall that a
-copula ![C](https://latex.codecogs.com/png.latex?C "C") is Lipschitz,
-and thus by Rademacher’s Theorem it is differentiable *almost
+We present several methods implemented for the copula object. Recall
+that a copula ![C](https://latex.codecogs.com/png.latex?C "C") is
+Lipschitz, and thus by Rademacher’s Theorem it is differentiable *almost
 everywhere*, i.e. the set of points where
 ![C](https://latex.codecogs.com/png.latex?C "C") is not differentiable
 has Lebesgue measure ![0](https://latex.codecogs.com/png.latex?0 "0").
@@ -126,9 +123,8 @@ Let ![(U,W)\\sim
 A](https://latex.codecogs.com/png.latex?%28U%2CW%29%5Csim%20A
 "(U,W)\\sim A") and ![(W,V) \\sim
 B](https://latex.codecogs.com/png.latex?%28W%2CV%29%20%5Csim%20B
-"(W,V) \\sim B") with ![A,B\\in
-\\mathscr{C}](https://latex.codecogs.com/png.latex?A%2CB%5Cin%20%5Cmathscr%7BC%7D
-"A,B\\in \\mathscr{C}"). We define
+"(W,V) \\sim B") with ![A,B](https://latex.codecogs.com/png.latex?A%2CB
+"A,B") being bi-variate copulas. We define
 
   
 ![C = A \\ast B = \\int\_0^1
@@ -185,17 +181,15 @@ plot(r(C)(1000))
 
 ## Convex Combinations
 
-The space
-![\\mathscr{C}](https://latex.codecogs.com/png.latex?%5Cmathscr%7BC%7D
-"\\mathscr{C}") is closed under convex combinations. That is, let
+The space of copulas is closed under convex combinations. That is, let
 ![\\alpha \\in
 (0,1)](https://latex.codecogs.com/png.latex?%5Calpha%20%5Cin%20%280%2C1%29
 "\\alpha \\in (0,1)"), then ![\\alpha A +
-(1-\\alpha)B\\in\\mathscr{C}](https://latex.codecogs.com/png.latex?%5Calpha%20A%20%2B%20%281-%5Calpha%29B%5Cin%5Cmathscr%7BC%7D
-"\\alpha A + (1-\\alpha)B\\in\\mathscr{C}") where addition for copulas
-is defined pointwise in ![(u,v)\\in
-\[0,1\]^2](https://latex.codecogs.com/png.latex?%28u%2Cv%29%5Cin%20%5B0%2C1%5D%5E2
-"(u,v)\\in [0,1]^2").
+(1-\\alpha)B](https://latex.codecogs.com/png.latex?%5Calpha%20A%20%2B%20%281-%5Calpha%29B
+"\\alpha A + (1-\\alpha)B") is a copula where addition for copulas is
+defined pointwise in ![(u,v)\\in
+\[0,1\]^n](https://latex.codecogs.com/png.latex?%28u%2Cv%29%5Cin%20%5B0%2C1%5D%5En
+"(u,v)\\in [0,1]^n").
 
 ``` r
 D = Convex(A,B,0.5)
