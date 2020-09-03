@@ -1,8 +1,5 @@
-CopulaR
+CopulaR (WiP)
 ================
-Toke Zinn
-1/9/2020
-
 # Introduction
 
 `CopulaR` is a lightweight vectorised, but non-optimised, copula
