@@ -4,13 +4,7 @@ CopulaR (WiP)
 
 `CopulaR` is a lightweight vectorised, but non-optimised, copula
 framework in R. Copulas are multivariate distribution functions which
-have uniform marginals. Our interest in copulas primarily comes from
-Sklar’s theorem stating that any multivariate distribution
-![F](https://latex.codecogs.com/png.latex?F "F") can be decomposed into
-its marginals ![(F\_1, \\dots
-F\_n)](https://latex.codecogs.com/png.latex?%28F_1%2C%20%5Cdots%20F_n%29
-"(F_1, \\dots F_n)") and a copula
-![C](https://latex.codecogs.com/png.latex?C "C").
+have uniform marginals.
 
 ## Regular Use
 
