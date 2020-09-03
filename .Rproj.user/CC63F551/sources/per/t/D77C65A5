@@ -1,0 +1,26 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1598348576566.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "4|46|6|27|\n7|40|14|0|\n15|39|17|0|\n",
+    "hash" : "2981953774",
+    "id" : "D77C65A5",
+    "lastKnownWriteTime" : 1598961774,
+    "last_content_update" : 1598961774874,
+    "path" : "~/GitHub/CopulaR/R/Common_Copulas.R",
+    "project_path" : "R/Common_Copulas.R",
+    "properties" : {
+        "cursorPosition" : "18,0",
+        "scrollLine" : "0",
+        "tempName" : "Untitled1"
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 3,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

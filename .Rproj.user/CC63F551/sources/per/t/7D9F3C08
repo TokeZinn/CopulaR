@@ -1,0 +1,27 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1598941521605.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "405935647",
+    "id" : "7D9F3C08",
+    "lastKnownWriteTime" : 1598963489,
+    "last_content_update" : 1598963489076,
+    "path" : "~/GitHub/CopulaR/Vignette.Rmd",
+    "project_path" : "Vignette.Rmd",
+    "properties" : {
+        "cursorPosition" : "145,395",
+        "last_setup_crc32" : "7A4F864Dc6998636",
+        "scrollLine" : "134",
+        "tempName" : "Untitled1"
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 4,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_markdown"
+}

@@ -1,0 +1,26 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1597780210396.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "8|48|19|0|\n20|61|76|0|\n77|75|99|0|\n100|83|122|0|\n",
+    "hash" : "1680051691",
+    "id" : "7786B3BC",
+    "lastKnownWriteTime" : 1598942125,
+    "last_content_update" : 1598942125489,
+    "path" : "~/GitHub/CopulaR/R/LinearInterpolator.R",
+    "project_path" : "R/LinearInterpolator.R",
+    "properties" : {
+        "cursorPosition" : "125,0",
+        "scrollLine" : "0",
+        "tempName" : "Untitled1"
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 2,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

@@ -1,0 +1,26 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1597656987036.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "23|24|26|0|\n29|31|169|0|\n211|73|459|0|\n463|78|467|0|\n490|64|495|1|\n506|80|521|0|\n",
+    "hash" : "2217722750",
+    "id" : "6ED83F5B",
+    "lastKnownWriteTime" : 1598961589,
+    "last_content_update" : 1598963247967,
+    "path" : "~/GitHub/CopulaR/R/Classes.R",
+    "project_path" : "R/Classes.R",
+    "properties" : {
+        "cursorPosition" : "8,0",
+        "scrollLine" : "0",
+        "tempName" : "Untitled1"
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 3,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}
