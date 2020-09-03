@@ -2,7 +2,9 @@
 title: "CopulaR"
 author: "Toke Zinn"
 date: "1/9/2020"
-output: html_document
+output:
+  github_document:
+    pandoc_args: --webtex
 ---
 
 ```{r setup, include=FALSE}
