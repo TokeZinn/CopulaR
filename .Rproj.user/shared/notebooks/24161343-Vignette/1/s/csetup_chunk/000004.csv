@@ -1,3 +1,0 @@
-"0","knitr::opts_chunk$set(echo = TRUE, fig.align = ""center"")"
-"0","source(""R/LinearInterpolator.R"")"
-"0","source(""R/Classes.R"")"
