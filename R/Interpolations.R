@@ -121,12 +121,45 @@ setMethod("MakeMesh", signature(P = "Partition"), function(P,...){
 setGeneric("FillValues", function(f, M,...){standardGeneric("FillValues")})
 setMethod("FillValues", signature(f = "function", M = "Mesh"), function(f,M,...){
   dim = length(M@mesh)
-  lengths = lapply()
 
-  Partitions = lapply(1:dim, function(i){M@mesh[[i]]@partition})
+  dimsize = sapply(1:dim, function(i){M@mesh[[i]]@n})
+
   Partitions = lapply(1:dim, function(i){M@mesh[[i]]@partition})
   Partitions = expand.grid(Partitions, stringsAsFactors = F)
 
+  M@values <- array(pmap_dbl(.l = unname(Partitions),.f = f,...),dim = dimsize)
 
+  M
 })
+
+
+
+LinInt = function(x, x_1, x_0, f_1, f_0){
+  alpha = (x-x_0)/(x_1-x_0)
+  f_0*(1-alpha) + f_1*alpha
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
