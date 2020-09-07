@@ -131,8 +131,12 @@ setMethod("FillValues", signature(f = "function", M = "Mesh"), function(f,M,...)
 
   M
 })
+setGeneric("LinearInterpolation", function(x, ..., M){standardGeneric("LinearInterpolation")})
+setMethod("LinearInterpolation", signature(x = "numeric", M = "Mesh" ), function(x, ..., M){
 
 
+
+})
 
 LinInt = function(x, x_1, x_0, f_1, f_0){
   alpha = (x-x_0)/(x_1-x_0)
@@ -140,22 +144,14 @@ LinInt = function(x, x_1, x_0, f_1, f_0){
 }
 
 
+P = EquidistantPartition(a = 0, b = 1, n = 100)
+M = MakeMesh(P,P)
 
+Upper_Index = sapply(M@mesh, function(m){m@n})
 
+x = y = seq(from = 0, to = 1, length.out = 11)
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+Index(x,y,P = M)
 
 
 
